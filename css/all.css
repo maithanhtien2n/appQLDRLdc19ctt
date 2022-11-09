@@ -1,0 +1,73 @@
+:root {
+    --ColorText: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app {
+    display: flex;
+}
+
+/* .col__right__container.active {
+    display: block;
+}
+
+.col__right__container {
+    display: none;
+} */
+
+/* Click menu */
+.col__left__header__menu ul li.active {
+    background-color: #E5E5E5;
+    border-radius: 5px;
+}
+
+/* Đăng xuất */
+.col__right__home__header__user__logout {
+    display: none;
+}
+
+.col__right__home__header__user__logout.active {
+    display: block;
+}
+
+/* Bổ sung nút xem theo kì, cả năm */
+.col__right__container__table__xemTheo button.active {
+    background-color: var(--ColorText);
+    color: #fff;
+}
+
+.col__right__container__table table {
+    width: 100%;
+}
+
+.col__right__container__table table.active {
+    display: none;
+}
+
+/* Bổ sung update ảnh đại diện */
+.app__taikhoan__updateImg {
+    display: none !important;
+}
+
+.app__taikhoan__updateImg.active {
+    display: flex !important;
+}

@@ -1,0 +1,114 @@
+/* Col phải */
+.col__right {
+    width: 100%;
+    height: 100%;
+    margin-left: 300px;
+}
+
+/* Col phải header */
+.col__right__header {
+    padding: 10px 50px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: rgba(50, 50, 93, 0.068) 0px 6px 12px -2px, rgba(0, 0, 0, 0.055) 0px 3px 7px -3px;
+    position: fixed;
+    top: 0; left: 300px; right: 0;
+    z-index: 99;
+}
+
+.col__right__home__header__user {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+}
+
+.col__right__home__header__user > img {
+    width: 45px;
+    height: 45px;
+    border-radius: 10%;
+    margin-right: 10px;
+    -webkit-user-select: none;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.089) 0px 0px 0px 1px;
+}
+
+.col__right__home__header__user > p {
+    color: var(--ColorText);
+}
+
+.col__right__container {
+    width: 100%;
+    height: 100%;
+    margin-top: 65px;
+    padding: 40px;
+}
+
+.col__right__container > p {
+    font-size: 30px;
+    color: var(--ColorText);
+    -webkit-user-select: none;
+}
+
+.col__right__home__header__user__logout {
+    position: absolute;
+    top: 120%; right: 0; left: 0;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 10000;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    -webkit-user-select: none;
+    padding-bottom: 30px;
+}
+
+.col__right__home__header__user__logout > h3 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: var(--ColorText);
+}
+
+.btnQLTaiKhoan {
+    box-shadow: rgba(0, 0, 0, 0.158) 0px 0px 0px 1px;
+    border: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    color: var(--ColorText);
+}
+
+.btnQLTaiKhoan:hover {
+    background-color: #F5F5F5;
+}
+
+.btnLogOut {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #555555c0;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnLogOut:hover {
+    background-color: var(--ColorText);
+}
+
+.arrow-up {
+    position: absolute;
+    top: -15px; right: 20px;
+    width:0px;
+    height:0px;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-bottom:20px solid #ffffff; /* Tam giác phía dưới được đổ màu */
+  }
+

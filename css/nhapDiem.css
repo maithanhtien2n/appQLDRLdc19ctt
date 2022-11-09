@@ -1,0 +1,446 @@
+:root {
+    --ColorText: #555555;
+}
+
+td, th {
+    border: none !important;
+    padding: 0 5px;
+}
+
+td {
+    background-color: #E5E5E5;
+}
+
+tr.main > th {
+    background-color: var(--ColorText);
+    color: #fff;
+    -webkit-user-select: none;
+}
+
+body {
+    padding-bottom: 70px;
+}
+
+td input {
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    background-color: #E5E5E5;
+}
+
+input[type='radio'] {
+    height: 20px;
+    cursor: pointer;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #555555;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid white;
+}
+
+.col__right__container__table {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.col__right__container__table > h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--ColorText);
+    font-size: 27px;
+}
+
+.col__right__container__table__from {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E5E5E5;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    -webkit-user-select: none;
+}
+
+.thongtin > .col__right__container__table__from__item {
+    margin-right: 20px;
+}
+
+.col__right__container__table__from label {
+    font-weight: bold;
+    font-size: 17px;
+    color: var(--ColorText);
+}
+
+.col__right__container__table__from input {
+    font-size: 17px;
+    height: 40px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 3px;
+    color: var(--ColorText);
+    border: none;
+}
+
+.col__right__container__table__from select {
+    font-size: 17px;
+    height: 40px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--ColorText);
+    border: none;
+}
+
+table {
+    margin-top: 10px;
+}
+
+/* Nhập điểm */
+.col__right__container__nutBam {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.col__right__container__nutBam__nhapDiem {
+    border: none;
+    padding: 10px 50px;
+    font-size: 20px;
+    background-color: var(--ColorText);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -webkit-user-select: none;
+}
+
+.col__right__container__nutBam__nhapDiem:hover {
+    transform: scale(1.03);
+}
+
+.col__right__container__nutBam__troLai {
+    position: fixed;
+    bottom: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #55555541;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -webkit-user-select: none;
+    text-decoration: none;
+}
+
+.col__right__container__nutBam__troLai:hover {
+    transform: scale(1.03);
+    background-color: var(--ColorText);
+}
+
+
+/* Bổ sung phần xếp loại, xem theo kì, cả năm */
+.col__right__container__table__xemTheo {
+    margin-top: 30px;
+    -webkit-user-select: none;
+}
+
+.col__right__container__table__xemTheo button {
+    padding: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Bổ sung chỗ from thông tin */
+.thongtin {
+    width: 50%;
+    display: flex;
+}
+
+/* Bổ sung bọ lọc */
+.boLoc_search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col__right__container__table__kqSearch h3 {
+    margin-top: 30px;
+    padding: 10px;
+    color: var(--ColorText);
+}
+
+/* Bổ sung quản lý admin */
+.ql__admin {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.ql__admin__item {
+    width: 23%;
+    margin: 20px 1%;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.ql__admin__item:hover {
+    transform: scale(1.02);
+}
+
+.ql__admin__item > img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -webkit-user-select: none;
+}
+
+.ql__admin__item__content {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid var(--ColorText);
+    padding-top: 20px;
+    color: var(--ColorText);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.ql__admin__item__content > h3 {
+    font-size: 17px;
+}
+
+.ql__admin__item__content > p {
+    font-size: 15px;
+}
+
+.btnSTT {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: var(--ColorText);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 20px;
+    -webkit-user-select: none;
+}
+
+/*  gạch ngăn cách */
+.ql__admin__gachNganCach {
+    width: 10%;
+    height: 2px;
+    border: 3px dashed #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* Bổ sung trang tài khoản */
+.app__taikhoan {
+    text-align: center;
+    -webkit-user-select: none;
+}
+
+.app__taikhoan__avarta {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.app__taikhoan__avarta:hover i {
+    opacity: 1;
+}
+
+.app__taikhoan__avarta img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.267) 0px 8px 24px;
+    cursor: pointer;
+}
+
+.app__taikhoan__avarta > i {
+    border-radius: 50%;
+    background-color: #55555557;
+    position: absolute;
+    padding: 100px;
+    font-size: 37px;
+    cursor: pointer;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.app__taikhoan > h3 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--ColorText);
+}
+
+.app__taikhoan__account {
+    width: 300px;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: left;
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* modal cập nhật ảnh đại diện */
+.app__taikhoan__updateImg {
+    position: fixed;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99999999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app__taikhoan__updateImg__container {
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+
+.app__taikhoan__updateImg__container > h3 {
+    font-size: 27px;
+    color: #555555;
+    padding: 10px;
+}
+
+.app__taikhoan__updateImg__input {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--ColorText);
+    padding: 0 10px;
+}
+
+.app__taikhoan__updateImg__input input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 17px;
+}
+
+.app__taikhoan__updateImg__input > i {
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--ColorText);
+}
+
+.app__taikhoan__updateImg__container button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--ColorText);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.app__taikhoan__updateImg__container > i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--ColorText);
+    font-size: 20px;
+    position: absolute;
+    top: 10px; right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(85, 85, 85, 0.178);
+}
+
+.app__taikhoan__updateImg__container > i:hover {
+    background-color: rgba(85, 85, 85, 0.253);
+}
+
+/* Hướng dẫn lấy link ảnh */
+.huongdan_lay_linkImg {
+    width: 100%;
+    margin-top: 30px;
+    border-top: 2px solid var(--ColorText);
+    padding: 20px 0;
+}
+
+.huongdan_lay_linkImg > h3 {
+    font-size: 30px;
+    color: red;
+}
+
+.huongdan_lay_linkImg > p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.huongdan_lay_linkImg > img {
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+

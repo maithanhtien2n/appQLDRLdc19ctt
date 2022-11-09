@@ -1,0 +1,43 @@
+/* Col trái */
+.col__left {
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    -webkit-user-select: none;
+}
+
+.col__left__header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: center;
+    background-color: #F5F5F5;
+    box-shadow: rgba(50, 50, 93, 0.068) 0px 6px 12px -2px, rgba(0, 0, 0, 0.055) 0px 3px 7px -3px;
+}
+
+.col__left__header img {
+    height: 45px;
+}
+
+/* Phần menu */
+.col__left__header__menu {
+    padding: 30px;
+}
+
+.col__left__header__menu ul li {
+    padding: 13px 0;
+    font-size: 17px;
+    color: #555555;
+    cursor: pointer;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.col__left__header__menu ul a {
+    text-decoration: none;
+}
+
+.col__left__header__menu ul li i {
+    margin-right: 10px;
+}
